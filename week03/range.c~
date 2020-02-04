@@ -1,0 +1,10 @@
+// Q6 W3 Tutorial Questions
+// reads integers n and m and then prints the integers n..m, one per line
+
+#include <stdio.h>
+
+int main(void) {
+
+
+    return 0;
+}
