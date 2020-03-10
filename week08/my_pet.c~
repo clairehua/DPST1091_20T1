@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_NAME_LENGTH 20
+
+struct date {
+    int day;
+    int month;
+    int year;
+};
+
+struct pet {
+    char name[MAX_NAME_LENGTH];
+    char type[MAX_NAME_LENGTH];
+    int age;
+    struct date dateOfBirth;
+};
+
+int main(void) {
+    struct pet pet1;
+    int a = 2;
+    strcpy(pet1.name, "Boris");
+    strcpy(pet1.type, "dog");
+    pet1.age = 7;
+    
+    // setting date of birth
+    pet1.dateOfBirth.day = 1;
+    //pet1.dateOfBirth.month = 4;
+    pet1.dateOfBirth.year = 1988;
+
+    printf("%d/%d/%d\n", pet1.dateOfBirth.day, pet1.dateOfBirth.month, pet1.dateOfBirth.year);
+
+    return 0;
+}
+
+//void printDOB(struct pet *pet1) {
+
+//}
+    
