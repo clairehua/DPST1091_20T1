@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int *sumFunction(int a, int b) {
+    int *sum = malloc(sizeof(int));
+    if (sum == NULL) { 
+        printf("error occured\n");
+        exit(1);
+    }
+    *sum = a + b;
+    return sum;
+}
+
+int main(void) {
+
+    int a = 1, b = 2;
+    
+    int *num = sumFunction(a, b);
+    
+    printf("%d\n", *num);
+    free(num);
+    // do whatever 
+    return 0;
+}
